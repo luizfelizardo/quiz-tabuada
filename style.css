@@ -1,0 +1,74 @@
+body {
+    background-image: linear-gradient(to right, rgb(236, 39, 39), rgb(114, 114, 9)); /* Gradiente do vermelho para o amarelo */
+  }
+
+h1 {
+    padding: 60px;
+    text-align: center;
+    color: #ffff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#quiz {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  #pergunta {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffff;
+  }
+  
+  #opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+
+  #opcoes button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
+  #opcoes button:hover {
+        background-color: #ddd;
+    }
+
+    
+  #opcoes button:active {
+    background-color: rgb(135, 211, 135);
+  }
+
+  button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  button:active {
+    background-color: rgb(167, 216, 167);
+    
+}
+  
+  #resultado {
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffff;
+  }
+  
+  .selecionado {
+    background-color: #ddd;
+  }
+
+  
