@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <title>Quiz de Tabuada Interativa</title>
   <link rel="stylesheet" href="style.css">
   </head>
 <body>
-  <h1>Quiz de Tabuada Interativa</h1>
+  <h1>Quiz <br> Tabuada Interativa</h1>
+  <div id="cronometro"></div>
   <div id="quiz">
     <div id="pergunta">
       </div>
@@ -15,11 +17,15 @@
       <button></button>
       <button></button>
     </div>
-    <button onclick="verificarResposta()">Verificar Resposta</button>
-    <button onclick="proximaPergunta()">Próxima Pergunta</button>
+    <!-- <button onclick="verificarResposta()">Verificar Resposta</button> -->
+    
     <div id="resultado">
+      <div id="cronometro"></div>
+      <div class="tempoEsgotado" style="display: none;">Tempo Esgotado!</div>
+      <!-- <button id="proxima" onclick="proximaPergunta()">Próxima Pergunta</button> -->
       </div>
-  </div>
+      <div class="botao-container">  <button id="proxima" onclick="proximaPergunta()">Próxima Pergunta</button> </div>
+    </div>
   <script src="script.js"></script>
 </body>
 </html>

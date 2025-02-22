@@ -1,20 +1,41 @@
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+  #quiz {
+    width: 90%; /* Largura do quiz ocupando 90% da tela */
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  #pergunta {
+    font-size: 20px; /* Tamanho da fonte menor */
+  }
+
+  #opcoes button {
+    font-size: 16px; /* Tamanho da fonte menor nos botões */
+    padding: 8px; /* Espaçamento menor nos botões */
+  }
+
+  /* Outros ajustes conforme necessário */
+}
+
+
 body {
-    background-image: linear-gradient(to right, rgb(236, 39, 39), rgb(114, 114, 9)); /* Gradiente do vermelho para o amarelo */
+    background-image: linear-gradient(to right, rgb(87, 83, 83), rgb(240, 240, 111)); /* Gradiente do vermelho para o amarelo */
   }
 
 h1 {
-    padding: 60px;
+    padding: 5px;
     text-align: center;
     color: #ffff;
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #quiz {
     width: 300px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffff;
   }
   
   #pergunta {
@@ -52,7 +73,8 @@ h1 {
   button {
     padding: 10px;
     margin: 5px;
-    cursor: pointer;
+    cursor: pointer; 
+    border: 1px solid #a1a1a1;
   }
 
   button:active {
@@ -64,11 +86,36 @@ h1 {
     margin-top: 30px;
     font-weight: bold;
     text-align: center;
-    color: #ffff;
+    color: #ffffff;
   }
   
+
+
   .selecionado {
     background-color: #ddd;
+    text-align: center;
   }
 
+  #opcoes button.correto {
+    background-color: green;
+    color: white;
+  }
   
+  #opcoes button.incorreto {
+    background-color: red;
+    color: white;
+  }
+
+  #cronometro {
+    text-align: center;
+    color: #ffff;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .botao-container { /* Estilos para o container do botão */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+  }
